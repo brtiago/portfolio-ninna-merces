@@ -2,21 +2,28 @@
     "name": "Ninna Mercês",
     "title": "Psicóloga Clínica",
     "description": "Terapia humanizada e acolhedora para sua jornada de autoconhecimento. Atendimento online e presencial em Fortaleza.",
-    "phone": "+55 85 99999-9999",
+    "phone": "+55 71 98183-6029",
     "email": "contato@psininnamerces.com",
     "address": "Salvador, BA",
-    "crp": "CRP 11/12345",
+    "crp": "CRP 03/9652",
     "social": {
-      "instagram": "psicomariasilva",
+      "instagram": "psininna.merces",
       "linkedin": "in/maria-silva-psicologa"
     },
-    "calendly": "https://calendly.com/psicomariasilva",
+    "doctoralia": "https://www.doctoralia.com.br/ninna-willena-mota-dos-santos-merces/psicologo/salvador",
     "whatsapp": {
-      "number": "5585999999999",
+      "number": "557181836029",
       "message": "Olá! Gostaria de agendar uma consulta."
     },
+    "hero": {
+    "headline": "Te ajudo a encontrar equilíbrio emocional",
+    "subheadline": "Terapia humanizada para sua jornada de autoconhecimento e bem-estar mental",
+    "cta_primary": "Agendar primeira consulta",
+    "cta_secondary": "Falar no WhatsApp"
+  },
     "seo": {
-      "keywords": "psicóloga, terapia, Fortaleza, ansiedade, depressão, autoconhecimento",
-      "image": "/images/og-image.jpg"
+      "keywords": "psicóloga, terapia, Salvador, ansiedade, depressão, autoconhecimento",
+      "image": "/images/og-image.jpg",
+      "author": "Ninna Mercês"
     }
   }
