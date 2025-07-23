@@ -1,0 +1,58 @@
+[
+    {
+      "id": "terapia-online",
+      "title": "Terapia Online",
+      "description": "Sessões por videochamada com a mesma qualidade do atendimento presencial",
+      "price": "R$ 120",
+      "duration": "50 min",
+      "highlights": [
+        "Flexibilidade de horários",
+        "Conforto da sua casa",
+        "Plataforma segura",
+        "Gravação opcional para revisão"
+      ],
+      "icon": "video"
+    },
+    {
+      "id": "terapia-presencial",
+      "title": "Terapia Presencial",
+      "description": "Atendimento no consultório em ambiente acolhedor e reservado",
+      "price": "R$ 140",
+      "duration": "50 min",
+      "highlights": [
+        "Ambiente controlado",
+        "Contato direto",
+        "Privacidade total",
+        "Recursos terapêuticos físicos"
+      ],
+      "icon": "user"
+    },
+    {
+      "id": "casal",
+      "title": "Terapia de Casal",
+      "description": "Fortalecimento dos vínculos e resolução de conflitos conjugais",
+      "price": "R$ 180",
+      "duration": "60 min",
+      "highlights": [
+        "Comunicação assertiva",
+        "Resolução de conflitos",
+        "Fortalecimento dos vínculos",
+        "Planejamento conjunto"
+      ],
+      "icon": "heart"
+    },
+    {
+      "id": "grupo",
+      "title": "Terapia em Grupo",
+      "description": "Sessões temáticas em pequenos grupos para questões específicas",
+      "price": "R$ 80",
+      "duration": "90 min",
+      "highlights": [
+        "Grupos de até 6 pessoas",
+        "Temas específicos",
+        "Aprendizado compartilhado",
+        "Rede de apoio"
+      ],
+      "icon": "users"
+    }
+  ]
