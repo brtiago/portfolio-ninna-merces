@@ -1,1 +1,65 @@
 @import "tailwindcss";
+
+/* src/styles/global.css */
+@layer base {
+    :root {
+      /* Cores */
+      --color-primary-50: #faf7ff;
+      --color-primary-100: #f3ecff;
+      --color-primary-200: #e9dcff;
+      --color-primary-300: #d7bfff;
+      --color-primary-400: #c098ff;
+      --color-primary-500: #a57ace;
+      --color-primary-600: #9557c4;
+      --color-primary-700: #8347b1;
+      --color-primary-800: #6d3d91;
+      --color-primary-900: #5a3576;
+      
+      --color-neutral-50: #f8f9fa;
+      --color-neutral-100: #f1f3f4;
+      --color-neutral-800: #2d3748;
+      --color-neutral-900: #1a202c;
+      
+      --color-success: #48bb78;
+      --color-warning: #ed8936;
+  
+      /* Fontes */
+      --font-sans: 'Inter', system-ui, sans-serif;
+      --font-heading: 'Poppins', system-ui, sans-serif;
+      --font-accent: 'Playfair Display', serif;
+  
+      /* Tamanhos de fonte */
+      --text-hero-size: 3.5rem;
+      --text-hero-line-height: 1.1;
+      --text-hero-weight: 700;
+      
+      --text-section-size: 2.5rem;
+      --text-section-line-height: 1.2;
+      --text-section-weight: 600;
+  
+      /* Espaçamentos */
+      --spacing-18: 4.5rem;
+      --spacing-88: 22rem;
+  
+      /* Animações */
+      --animation-fade-in: fadeIn 0.6s ease-in-out;
+      --animation-slide-up: slideUp 0.8s ease-out;
+    }
+  
+    /* Definindo as animações */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  
+    @keyframes slideUp {
+      from { 
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to { 
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
