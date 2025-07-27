@@ -18,7 +18,7 @@ const {
   noindex = false 
 } = Astro.props;
 
-const fullTitle = `${title} | ${siteConfig.name} - ${siteConfig.title}`;
+const fullTitle = `${siteConfig.name} - ${siteConfig.title}`;
 
 // Função auxiliar para criar URLs seguras
 function createSafeURL(path: string, base?: string | URL): string {
