@@ -2,23 +2,28 @@
 import siteConfig from '../../data/site-config.json';
 ---
 <!-- hero-section -->
-<section class="min-h-screen flex items-center py-32 relative overflow-hidden" id="home">
+<section class="min-h-screen bg-gradient-to-br from-(--secondary) to-white flex items-center pt-32 pb-4 relative overflow-hidden pt" id="home">
   <!-- Container -->
   <div class="mx-auto px-8 max-w-6xl">
     <!-- Hero Content -->
-    <div class="hero-content">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center relative z-20 text-center md:text-left">
+      
       <!-- Texto Principal -->
-      <div class="hero-text">
+      <div class="animate-[slideUp_0.8s_ease-out]">
         <h1 class="var(--warning)">{siteConfig.name}</h1>
-        <h2 class="hero-headline">
+        <!-- Hero Headline -->
+        <h2 class="font-['Poppins'] text-[clamp(2.5rem,5vw,3.5rem)] font-bold 
+        leading-[1.2] text-(--neutral-800) mb-6 bg-gradient-to-br from-(--neutral-800) 
+        to-(--primary-dark) bg-clip-text text-transparent">
           {siteConfig.hero.headline}
         </h2>
-        <p class="hero-subheadline">
+        <!-- Hero Subheadline -->
+        <p class="font-['Inter'] text-xl font-normal leading-tight text-slate-500 mb-10">
           {siteConfig.hero.subheadline}
         </p>
         
         <!-- CTAs -->
-        <div class="hero-ctas">
+        <div class="flex gap-4 mb-8 flex-wrap">
           <a 
             href={siteConfig.doctoralia} 
             target="_blank" 
