@@ -35,7 +35,7 @@ import siteConfig from '../../data/site-config.json';
           </a>
           
           <a 
-            href={`https://wa.me/${siteConfig.whatsapp.number}?text=${siteConfig.whatsapp.message}`}
+            href={`https://wa.me/${siteConfig.whatsapp.number}?text=${encodeURIComponent(siteConfig.whatsapp.message)}`}
             target="_blank" 
             rel="noopener noreferrer"
             class="btn-secondary"
