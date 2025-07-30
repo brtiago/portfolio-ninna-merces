@@ -1,15 +1,16 @@
 ---
-import Layout from '../layouts/BaseLayout.astro';
-import Header from '../components/layout/Header.astro'
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/layout/Header.astro';
 import Hero from '../components/sections/Hero.astro';
 import About from '../components/sections/About.astro';
 import Services from '../components/sections/Services.astro';
 import Contact from '../components/sections/Contact.astro';
-import Footer from '../components/layout/Footer.astro'
+import Footer from '../components/layout/Footer.astro';
 import siteConfig from '../data/site-config.json';
+
 ---
 
-<Layout 
+<BaseLayout 
   title={`${siteConfig.name} - ${siteConfig.title}`}
   description={siteConfig.description}
 >
@@ -19,4 +20,4 @@ import siteConfig from '../data/site-config.json';
   <Services />
   <Contact />
   <Footer />
-</Layout>
+</BaseLayout>
