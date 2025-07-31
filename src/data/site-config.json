@@ -20,10 +20,13 @@
     "subheadline": "Terapia humanizada para sua jornada de autoconhecimento e bem-estar mental",
     "cta_primary": "Agendar consulta",
     "cta_secondary": "Falar no WhatsApp"
-  },
+    },
+    "images": {
+      "image1": "abc.jpg",
+      "image2": "psi2.png"
+    },
     "seo": {
       "keywords": "psicóloga, terapia, Salvador, ansiedade, depressão, autoconhecimento",
-      "image": "/images/og-image.jpg",
       "author": "Ninna Mercês"
     }
   }
