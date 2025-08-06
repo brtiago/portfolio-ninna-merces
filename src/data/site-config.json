@@ -1,7 +1,7 @@
 {
     "name": "Ninna Willena",
     "title": "Psicóloga Clínica",
-    "description": "Terapia humanizada e acolhedora para sua jornada de autoconhecimento. Atendimento online e presencial em Salvador.",
+    "description": "Terapia PROPOSTA e acolhedora para sua jornada de autoconhecimento. Atendimento online e presencial em Salvador.",
     "phone": "+55 71 98183-6029",
     "email": "ninna.ufba@gmail.com",
     "address": "Salvador, BA",
@@ -17,13 +17,14 @@
     },
     "hero": {
     "headline": "Te ajudo a encontrar equilíbrio emocional",
-    "subheadline": "Terapia humanizada para sua jornada de autoconhecimento e bem-estar mental",
+    "subheadline": "Terapia PROPOSTA para sua jornada de autoconhecimento e bem-estar mental",
     "cta_primary": "Agendar consulta",
     "cta_secondary": "Falar no WhatsApp"
     },
     "images": {
       "image1": "abc.jpg",
-      "image2": "psi2.png"
+      "image2": "psi2.png",
+      "image3": "pexels-shvetsa-5325056.webp"
     },
     "seo": {
       "keywords": "psicóloga, terapia, Salvador, ansiedade, depressão, autoconhecimento",
