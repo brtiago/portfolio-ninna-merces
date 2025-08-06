@@ -3,7 +3,7 @@ import siteConfig from "../../data/site-config.json";
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="bg-gray-900 text-white">
+<footer class="bg-slate-900 text-white">
   <!-- Seção Principal do Footer -->
   <div class="max-w-6xl mx-auto px-6 py-16">
     <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
@@ -13,10 +13,10 @@ const currentYear = new Date().getFullYear();
           <h3 class="text-2xl font-semibold text-white mb-2 font-['Poppins']">
             {siteConfig.name}
           </h3>
-          <p class="text-purple-300 font-medium mb-4">
+          <p class="text-teal-300 font-medium mb-4">
             {siteConfig.name} • {siteConfig.title}
           </p>
-          <p class="text-gray-300 leading-relaxed max-w-md">
+          <p class="text-slate-300 leading-relaxed max-w-md">
             {siteConfig.description}
           </p>
         </div>
@@ -31,7 +31,7 @@ const currentYear = new Date().getFullYear();
               href={`https://instagram.com/${siteConfig.social.instagram.replace("@", "")}`}
               target="_blank"
               rel="noopener noreferrer"
-              class="w-12 h-12 bg-purple-600 hover:bg-purple-500 rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-105"
+              class="w-12 h-12 bg-teal-700 hover:bg-teal-600 rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-105"
               aria-label="Instagram"
             >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -45,7 +45,7 @@ const currentYear = new Date().getFullYear();
               href={`https://linkedin.com/${siteConfig.social.linkedin}`}
               target="_blank"
               rel="noopener noreferrer"
-              class="w-12 h-12 bg-purple-600 hover:bg-purple-500 rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-105"
+              class="w-12 h-12 bg-teal-700 hover:bg-teal-600 rounded-lg flex items-center justify-center transition-all duration-200 hover:scale-105"
               aria-label="LinkedIn"
             >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -66,19 +66,25 @@ const currentYear = new Date().getFullYear();
         <nav class="space-y-3">
           <a
             href="#inicio"
-            class="block text-gray-300 hover:text-purple-300 transition-colors duration-200"
+            class="block text-slate-300 hover:text-teal-300 transition-colors duration-200"
           >
             Início
           </a>
           <a
             href="#sobre"
-            class="block text-gray-300 hover:text-purple-300 transition-colors duration-200"
+            class="block text-slate-300 hover:text-teal-300 transition-colors duration-200"
           >
             Sobre Mim
           </a>
           <a
+            href="#servicos"
+            class="block text-slate-300 hover:text-teal-300 transition-colors duration-200"
+          >
+            Serviços
+          </a>
+          <a
             href="#atendimento"
-            class="block text-gray-300 hover:text-purple-300 transition-colors duration-200"
+            class="block text-slate-300 hover:text-teal-300 transition-colors duration-200"
           >
             Atendimento
           </a>
@@ -86,7 +92,7 @@ const currentYear = new Date().getFullYear();
             href={siteConfig.doctoralia}
             target="_blank"
             rel="noopener noreferrer"
-            class="block text-gray-300 hover:text-purple-300 transition-colors duration-200"
+            class="block text-slate-300 hover:text-teal-300 transition-colors duration-200"
           >
             Agendar Consulta
           </a>
@@ -104,7 +110,7 @@ const currentYear = new Date().getFullYear();
             href={`https://wa.me/${siteConfig.whatsapp.number}?text=${encodeURIComponent(siteConfig.whatsapp.message)}`}
             target="_blank"
             rel="noopener noreferrer"
-            class="flex items-start space-x-3 text-gray-300 hover:text-green-400 transition-colors duration-200 group"
+            class="flex items-start space-x-3 text-slate-300 hover:text-green-400 transition-colors duration-200 group"
           >
             <div
               class="w-8 h-8 bg-green-600 group-hover:bg-green-500 rounded-lg flex items-center justify-center transition-colors duration-200 flex-shrink-0"
@@ -125,10 +131,10 @@ const currentYear = new Date().getFullYear();
           <!-- Email -->
           <a
             href={`mailto:${siteConfig.email}`}
-            class="flex items-start space-x-3 text-gray-300 hover:text-purple-300 transition-colors duration-200 group"
+            class="flex items-start space-x-3 text-slate-300 hover:text-teal-300 transition-colors duration-200 group"
           >
             <div
-              class="w-8 h-8 bg-purple-600 group-hover:bg-purple-500 rounded-lg flex items-center justify-center transition-colors duration-200 flex-shrink-0"
+              class="w-8 h-8 bg-teal-700 group-hover:bg-teal-600 rounded-lg flex items-center justify-center transition-colors duration-200 flex-shrink-0"
             >
               <svg
                 class="w-4 h-4 text-white"
@@ -147,9 +153,9 @@ const currentYear = new Date().getFullYear();
           </a>
 
           <!-- Localização -->
-          <div class="flex items-start space-x-3 text-gray-300">
+          <div class="flex items-start space-x-3 text-slate-300">
             <div
-              class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center flex-shrink-0"
+              class="w-8 h-8 bg-teal-700 rounded-lg flex items-center justify-center flex-shrink-0"
             >
               <svg
                 class="w-4 h-4 text-white"
@@ -171,7 +177,7 @@ const currentYear = new Date().getFullYear();
   </div>
 
   <!-- Linha divisória -->
-  <div class="border-t border-gray-800"></div>
+  <div class="border-t border-slate-800"></div>
 
   <!-- Copyright e Informações Legais -->
   <div class="max-w-6xl mx-auto px-6 py-8">
@@ -179,7 +185,7 @@ const currentYear = new Date().getFullYear();
       class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
     >
       <!-- Copyright -->
-      <div class="text-gray-400 text-sm text-center md:text-left">
+      <div class="text-slate-400 text-sm text-center md:text-left">
         <p>
           © {currentYear}
           {siteConfig.name}. Todos os direitos reservados.
@@ -190,8 +196,8 @@ const currentYear = new Date().getFullYear();
       </div>
 
       <!-- Informações Profissionais -->
-      <div class="text-gray-400 text-sm text-center md:text-right">
-        <p class="font-medium text-purple-300">
+      <div class="text-slate-400 text-sm text-center md:text-right">
+        <p class="font-medium text-teal-300">
           {siteConfig.title} - Conselho Regional de Psicologia
         </p>
         <p class="mt-1">Atendimento regulamentado pelo CFP</p>
@@ -199,12 +205,12 @@ const currentYear = new Date().getFullYear();
     </div>
 
     <!-- Disclaimer Profissional -->
-    <div class="mt-8 pt-6 border-t border-gray-800">
-      <div class="bg-gray-800 rounded-lg p-6">
-        <h5 class="text-purple-300 font-semibold text-sm mb-3 font-['Poppins']">
+    <div class="mt-8 pt-6 border-t border-slate-800">
+      <div class="bg-slate-800 rounded-lg p-6">
+        <h5 class="text-teal-300 font-semibold text-sm mb-3 font-['Poppins']">
           ⚠️ Informações Importantes:
         </h5>
-        <div class="text-gray-400 text-xs space-y-2 leading-relaxed">
+        <div class="text-slate-400 text-xs space-y-2 leading-relaxed">
           <p>
             • <strong
               >Este site não substitui uma consulta médica ou psicológica
