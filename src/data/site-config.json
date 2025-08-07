@@ -24,7 +24,8 @@
     "images": {
       "image1": "abc.webp",
       "image2": "psi2.webp",
-      "image3": "pexels-shvetsa-5325056.webp"
+      "image3": "pexels-shvetsa-5325056.webp",
+      "logo": "logo_ninna.svg"
     },
     "seo": {
       "keywords": "psicóloga, terapia, Salvador, ansiedade, depressão, autoconhecimento",
