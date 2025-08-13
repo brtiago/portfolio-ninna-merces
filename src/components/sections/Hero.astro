@@ -1,5 +1,6 @@
 ---
-import siteConfig from "../../data/site-config.json";
+import siteConfig from '../../data/site-config.json';
+
 ---
 
 <!-- hero-section -->
@@ -17,7 +18,7 @@ import siteConfig from "../../data/site-config.json";
       <div class="animate-[slideUp_0.8s_ease-out] space-y-4">
         <!-- Main Title (H1) - Nome e CRP -->
         <h1 class="font-['Poppins'] text-3xl md:text-4xl lg:text-5xl font-black text-slate-800 
-        leading-tight tracking-tight">
+        leading-tight tracking-tight" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           {siteConfig.name}
           <span class="block text-lg md:text-lg lg:text-xl font-semibold 
           text-blue-600 mt-1">
@@ -41,22 +42,23 @@ import siteConfig from "../../data/site-config.json";
         </p>
 
         <!-- CTAs -->
-        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+        <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center px-4">
+  
           <a
             href={siteConfig.doctoralia}
             target="_blank"
             rel="noopener noreferrer"
-            class="btn-primary"
+            class="btn-primary w-full sm:w-auto max-w-xs"
             id="cta-agendar"
           >
             {siteConfig.hero.cta_primary}
           </a>
-
+        
           <a
             href={`https://wa.me/${siteConfig.whatsapp.number}?text=${encodeURIComponent(siteConfig.whatsapp.message)}`}
             target="_blank"
             rel="noopener noreferrer"
-            class="btn-secondary"
+            class="btn-secondary w-full sm:w-auto max-w-xs"
             id="cta-whatsapp"
           >
             {siteConfig.hero.cta_secondary}
