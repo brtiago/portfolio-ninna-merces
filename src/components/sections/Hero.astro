@@ -14,25 +14,34 @@ import siteConfig from "../../data/site-config.json";
       class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-16 items-center relative z-20 text-center md:text-left"
     >
       <!-- Texto Principal -->
-      <div class="animate-[slideUp_0.8s_ease-out]">
-        <h1 class="var(--warning)">{siteConfig.name} - {siteConfig.crp}</h1>
-        <!-- Hero Headline -->
-        <h2
-          class="font-['Poppins'] text-[clamp(2.5rem,5vw,3.5rem)] font-bold
-        leading-[1.2] text-(--neutral-800) mb-6 bg-gradient-to-br from-(--neutral-800)
-        to-(--primary-dark) bg-clip-text text-transparent"
-        >
+      <div class="animate-[slideUp_0.8s_ease-out] space-y-4">
+        <!-- Main Title (H1) - Nome e CRP -->
+        <h1 class="font-['Poppins'] text-3xl md:text-4xl lg:text-5xl font-black text-slate-800 
+        leading-tight tracking-tight">
+          {siteConfig.name}
+          <span class="block text-lg md:text-lg lg:text-xl font-semibold 
+          text-blue-600 mt-1">
+          {siteConfig.title}
+          </span>
+          <span class="block text-lg md:text-lg lg:text-xl font-semibold 
+          text-blue-600 mt-1">
+            {siteConfig.crp}
+          </span>
+        </h1>
+        
+        <!-- Hero Headline (H2) -->
+        <h2 class="font-['Poppins'] text-xl md:text-2xl lg:text-3xl font-bold text-slate-700 
+        leading-snug max-w-4xl">
           {siteConfig.hero.headline}
         </h2>
+        
         <!-- Hero Subheadline -->
-        <p
-          class="font-['Inter'] text-xl font-normal leading-tight text-slate-500 mb-10"
-        >
+        <p class="font-['Inter'] text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
           {siteConfig.hero.subheadline}
         </p>
 
         <!-- CTAs -->
-        <div class="flex gap-4 mb-8 flex-wrap">
+        <div class="flex flex-col sm:flex-row gap-4 pt-4">
           <a
             href={siteConfig.doctoralia}
             target="_blank"
