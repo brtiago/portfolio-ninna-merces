@@ -1,0 +1,109 @@
+---
+interface Props {
+    number: string;
+    titulo: string;
+    modalidadeValor: string;
+    publicoValor: string;
+    descricao: string;
+    icone: string;
+    whatsappLogo?: string;
+    realizacaoConvenio?: string;
+    encontrosRegulares: string;
+    duracaoValor: string;
+    pagamentoPix: string;
+  }
+  
+  const { 
+    number, 
+    titulo, 
+    icone, 
+    descricao, 
+    modalidadeValor,
+    publicoValor,
+    whatsappLogo,
+    realizacaoConvenio,
+    encontrosRegulares,
+    duracaoValor,
+    pagamentoPix
+  } = Astro.props;
+---
+<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
+    <div class="flex items-center mb-4">
+      <div
+        class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mr-4"
+      >
+        <svg
+          class="w-6 h-6 text-teal-600"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d={icone}
+          ></path>
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold text-slate-900">
+        {titulo}
+      </h3>
+    </div>
+
+    <div class="flex-grow">
+      <p class="text-slate-600 mb-4 text-justify">
+        {descricao}
+      </p>
+
+      <div class="space-y-3 mb-8">
+        <div class="bg-teal-50 p-4 rounded-lg">
+          <h4 class="font-semibold text-teal-900 mb-2">
+            Detalhes importantes:
+          </h4>
+          <div class="grid grid-cols-1 gap-2 text-sm text-teal-800">
+            <div class="flex items-center">
+              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mr-2"></div>
+              <p><strong class="text-teal-900">Modalidade:</strong> {modalidadeValor}</p>
+            </div>
+            <div class="flex items-center">
+              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mr-2"></div>
+              <p><strong class="text-teal-900">Público:</strong> {publicoValor}</p>
+            </div>
+            <div class="flex items-center">
+              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mr-2"></div>
+              <p><strong class="text-teal-900">Realização:</strong> {realizacaoConvenio}</p>
+            </div>
+            <div class="flex items-center">
+              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mr-2"></div>
+              <p><strong class="text-teal-900">Como ocorrem os encontros:</strong> {encontrosRegulares}</p>
+            </div>
+            <div class="flex items-center">
+              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mr-2"></div>
+              <p><strong class="text-teal-900">Duração de cada encontro:</strong> {duracaoValor}</p>
+            </div>
+            <div class="flex items-center">
+              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mr-2"></div>
+              <p><strong class="text-teal-900">No particular:</strong> {pagamentoPix}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Maiores informações -->
+    <div class="flex justify-center mt-auto">
+      <a
+        href={`https://wa.me/${number}?text=${encodeURIComponent(`Olá! Tenho interesse no serviço de ${titulo}. Gostaria de mais informações e agendar uma consulta.`)}`}
+        class="bg-teal-800 hover:bg-teal-900 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 flex items-center gap-2"
+        target="_blank"
+        rel="noopener noreferrer"
+        id="cta-whatsapp"
+      >
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+        <path d={whatsappLogo} />
+      </svg>
+        Maiores informações
+      </a>
+    </div>
+  </div>
