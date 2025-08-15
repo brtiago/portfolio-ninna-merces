@@ -30,28 +30,26 @@ interface Props {
   } = Astro.props;
 ---
 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
-    <div class="flex items-center mb-4">
-      <div
-        class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mr-4"
+  <div class="flex items-center mb-4 gap-4">
+    <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center flex-shrink-0">
+      <svg
+        class="w-6 h-6 text-teal-600 flex-shrink-0"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
       >
-        <svg
-          class="w-6 h-6 text-teal-600"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d={icone}
-          ></path>
-        </svg>
-      </div>
-      <h3 class="text-xl font-semibold text-slate-900">
-        {titulo}
-      </h3>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d={icone}
+        ></path>
+      </svg>
     </div>
+    <h3 class="text-xl font-semibold text-slate-900 min-w-0">
+      {titulo}
+    </h3>
+  </div>
 
     <div class="flex-grow">
       <p class="text-slate-600 mb-4 text-justify">
@@ -64,29 +62,29 @@ interface Props {
             Detalhes importantes:
           </h4>
           <div class="grid grid-cols-1 gap-2 text-sm text-teal-800">
-            <div class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mr-2"></div>
-              <p><strong class="text-teal-900">Modalidade:</strong> {modalidadeValor}</p>
+            <div class="flex items-start gap-2">
+              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mt-1.5 flex-shrink-0"></div>
+              <p class="leading-relaxed"><strong class="text-teal-900">Modalidade:</strong> {modalidadeValor}</p>
             </div>
-            <div class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mr-2"></div>
-              <p><strong class="text-teal-900">Público:</strong> {publicoValor}</p>
+            <div class="flex items-start gap-2">
+              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mt-1.5 flex-shrink-0"></div>
+              <p class="leading-relaxed"><strong class="text-teal-900">Público:</strong> {publicoValor}</p>
             </div>
-            <div class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mr-2"></div>
-              <p><strong class="text-teal-900">Realização:</strong> {realizacaoConvenio}</p>
+            <div class="flex items-start gap-2">
+              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mt-1.5 flex-shrink-0"></div>
+              <p class="leading-relaxed"><strong class="text-teal-900">Realização:</strong> {realizacaoConvenio}</p>
             </div>
-            <div class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mr-2"></div>
-              <p><strong class="text-teal-900">Como ocorrem os encontros:</strong> {encontrosRegulares}</p>
+            <div class="flex items-start gap-2">
+              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mt-1.5 flex-shrink-0"></div>
+              <p class="leading-relaxed break-words"><strong class="text-teal-900">Como ocorrem os encontros:</strong> {encontrosRegulares}</p>
             </div>
-            <div class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mr-2"></div>
-              <p><strong class="text-teal-900">Duração de cada encontro:</strong> {duracaoValor}</p>
+            <div class="flex items-start gap-2">
+              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mt-1.5 flex-shrink-0"></div>
+              <p class="leading-relaxed break-words"><strong class="text-teal-900">Duração de cada encontro:</strong> {duracaoValor}</p>
             </div>
-            <div class="flex items-center">
-              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mr-2"></div>
-              <p><strong class="text-teal-900">No particular:</strong> {pagamentoPix}</p>
+            <div class="flex items-start gap-2">
+              <div class="w-1.5 h-1.5 bg-teal-600 rounded-full mt-1.5 flex-shrink-0"></div>
+              <p class="leading-relaxed"><strong class="text-teal-900">No particular:</strong> {pagamentoPix}</p>
             </div>
           </div>
         </div>
