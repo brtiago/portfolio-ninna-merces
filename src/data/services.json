@@ -1,58 +1,79 @@
-[
-    {
-      "id": "terapia-online",
-      "title": "Terapia Online",
-      "description": "Sessões por videochamada com a mesma qualidade do atendimento presencial",
-      "price": "R$ 120",
-      "duration": "50 min",
-      "highlights": [
-        "Flexibilidade de horários",
-        "Conforto da sua casa",
-        "Plataforma segura",
-        "Gravação opcional para revisão"
-      ],
-      "icon": "video"
+{
+  "textos_comuns": {
+    "detalhes": "Detalhes importantes:",
+    "modalidade": "Modalidade:",
+    "publico": "Público:",
+    "realizacao": "Realização:",
+    "encontros": "Como ocorrem os encontros:",
+    "duracao": "Duração de cada encontro:",
+    "pagamento": "No particular:",
+    "botaoTexto": "Maiores informações",
+    "realizacaoConvenio": "Via convênio e particular",
+    "pagamentoPix": "Pagamento em pix ou cartão",
+    "encontrosRegulares": "Semanal ou quinzenal",
+    "whatsappLogo": "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.531 3.488"
+  },
+  
+  "terapias": {
+    "psicoterapiaCasal": {
+      "titulo": "Psicoterapia de Casal (adulto)",
+      "descricao": "Este serviço oferta escuta qualificada com sigilo e segurança, praticidade e fácil acesso e resultados comprovados. A psicoterapia de casal oferece um espaço seguro e guiado por um profissional para que os parceiros explorem seus problemas, entendam suas dinâmicas e desenvolvam estratégias para lidar com as dificuldades de forma mais saudável.",
+      "modalidadeValor": "Online",
+      "publicoValor": "Adulto/Idoso",
+      "duracaoValor": "90 minutos (casal) e (Quando individual) 45 minutos",
+      "icone": "M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"
     },
-    {
-      "id": "terapia-presencial",
-      "title": "Terapia Presencial",
-      "description": "Atendimento no consultório em ambiente acolhedor e reservado",
-      "price": "R$ 140",
-      "duration": "50 min",
-      "highlights": [
-        "Ambiente controlado",
-        "Contato direto",
-        "Privacidade total",
-        "Recursos terapêuticos físicos"
-      ],
-      "icon": "user"
+
+    "avaliacaoNeuropsicologica": {
+      "titulo": "Avaliação Neuropsicológica",
+      "descricao": "Esse serviço é realizado apenas na modalidade presencial para aqueles que buscam ferramenta de investigação em diagnóstico de condições neurológicas e transtornos que afetam o desempenho cognitivo (como TDAH, Síndrome de Asperge, TOC, Autismo, Dislexia, Distúrbio da escrita e linguagem dentre outros) e assim confirmar ou não suspeitas, obter orientação adequada de tratamento e a reabilitação se necessário. Para tanto o psicólogo utilizara de recursos da observação, escuta, registro oriundo de entrevistas e coletas de dados também através de aplicação de testes psicológicos e ao final o cliente recebera devolutiva do resultado da análise com laudo escrito.",
+      "modalidadeValor": "apenas presencial",
+      "publicoValor": "Todas as idades",
+      "icone": "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z",
+      "campos_especiais": {
+        "passoAPasso": "Passo a passo",
+        "passoAPassoValor": "Aplicação de entrevista e formulários, Anamnese (história médica, educacional e pessoal do paciente), Momentos para realização da escuta e observação e aplicação de testes psicológicos padronizados pelo Conselho Federal de Psicologia (CFP",
+        "duracaoRecursos": "Duração da aplicação dos recursos:",
+        "duracaoRecursosValor": "10h/20h corresponde a 2/3 encontros",
+        "devolutiva": "Escolha o prazo para devolutiva/laudo:",
+        "devolutivaResultado": "Ver em Maiores Informações"
+      }
     },
-    {
-      "id": "casal",
-      "title": "Terapia de Casal",
-      "description": "Fortalecimento dos vínculos e resolução de conflitos conjugais",
-      "price": "R$ 180",
-      "duration": "60 min",
-      "highlights": [
-        "Comunicação assertiva",
-        "Resolução de conflitos",
-        "Fortalecimento dos vínculos",
-        "Planejamento conjunto"
-      ],
-      "icon": "heart"
+
+    "orientacaoPais": {
+      "titulo": "Orientação a Pais",
+      "descricao": "Esse serviço pode ser realizado em ambas as modalidades (presencial ou online). Trata-se de um espaço seguro de escuta, acolhimento, análise e devolutiva para os pais e nesse espaço os pais expressam suas dificuldades, medos e frustrações relacionadas à parentalidade, recebendo apoio e validação profissional.",
+      "modalidadeValor": "Online",
+      "publicoValor": "Adulto",
+      "duracaoValor": "30 ou 50 minutos",
+      "icone": "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
     },
-    {
-      "id": "grupo",
-      "title": "Terapia em Grupo",
-      "description": "Sessões temáticas em pequenos grupos para questões específicas",
-      "price": "R$ 80",
-      "duration": "90 min",
-      "highlights": [
-        "Grupos de até 6 pessoas",
-        "Temas específicos",
-        "Aprendizado compartilhado",
-        "Rede de apoio"
-      ],
-      "icon": "users"
+
+    "psicoterapiaIndividual": {
+      "titulo": "Psicoterapia Individual (adulto)",
+      "descricao": "Este serviço oferta escuta qualificada com sigilo e segurança, praticidade e fácil acesso e resultados comprovados. A psicoterapia auxiliar as pessoas a lidar com seus conflitos, sofrimentos e dificuldades emocionais, buscando um maior equilíbrio psicológico e bem-estar. Através da modalidade online é possível maior flexibilidade de horários, evita ausências, liberdade, autonomia e acessibilidade ao cliente de realizar seus atendimentos psicológicos de qualquer lugar do mundo.",
+      "modalidadeValor": "Online",
+      "publicoValor": "Todas as idades a partir de 10 anos",
+      "duracaoValor": "50 minutos (individual)",
+      "icone": "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+    },
+
+    "orientacaoVocacional": {
+      "titulo": "Orientação Vocacional",
+      "descricao": "Esse serviço tem a função de ajudar pessoas a descobrir suas aptidões, interesses e valores, auxiliando na escolha de uma carreira profissional ou curso que esteja alinhado com seu perfil. Ela promove o autoconhecimento, reduz a ansiedade na escolha e evita desistências precoces. O cliente poderá ter a necessidade de realizar alguns testes, entrevistas e para culminar em análise e assim o profissional melhor reunir dados e concluir análise do caso podendo ajudar a pessoa a descobrir suas áreas de interesse e suas habilidades naturais.",
+      "modalidadeValor": "Online e Presencial",
+      "publicoValor": "Pessoas no Ensino Médio ou Adultos",
+      "duracaoValor": "50 minutos",
+      "icone": "M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+    },
+
+    "psicoterapiaInfantil": {
+      "titulo": "Psicoterapia Infantil",
+      "descricao": "Este serviço oferta permite o psicólogo ajuda crianças a lidar com desafios emocionais e comportamentais através de brincadeiras e outras atividades lúdicas, buscando promover o bem-estar e desenvolvimento saudável. O profissional irá avaliar e intervêm em problemas como ansiedade, depressão, dificuldades de aprendizado, inabilidade social, problemas de relacionamento dentre outros. O terapeuta também trabalha com a família para criar um ambiente de apoio e compreensão.",
+      "modalidadeValor": "Online e Presencial",
+      "publicoValor": "Pessoas a partir de 05 anos",
+      "duracaoValor": "50 minutos",
+      "icone": "M12 8a3 3 0 100-6 3 3 0 000 6zm0 3v6m-3-4l-2 2m6-2l2 2m-6 4l-2 4m4-4l2 4M18 4l2 2-2 2-2-2 2-2z"
     }
-  ]
+  }
+}
