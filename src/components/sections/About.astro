@@ -4,26 +4,18 @@ import siteConfig from "../../data/site-config.json";
 
 <section class="py-20 bg-white" id="sobre">
   <div class="max-w-6xl mx-auto px-6">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <!-- Foto Secundária - Layout Melhorado -->
-      <div class="flex justify-center lg:justify-start">
-        <div class="relative">
+    <div class="grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-start">
+      <!-- Foto Secundária - Ajustada proporcionalmente -->
+      <div class="flex justify-center lg:justify-start lg:pt-4" data-aos="fade-right">
+        <div class="relative w-full max-w-md">
           <img
             src={`/images/${siteConfig.images.image2}`}
             alt="Psicóloga em seu consultório"
-            class="w-full max-w-sm h-auto aspect-[4/5] object-cover rounded-2xl shadow-lg"
+            class="w-full h-auto aspect-[4/5] object-cover rounded-2xl shadow-lg"
             loading="lazy"
           />
-
-          <!-- Elemento decorativo sutil -->
-          <div
-            class="absolute -bottom-4 -right-4 w-20 h-20 bg-teal-50 rounded-full -z-10"
-          >
-          </div>
-          <div
-            class="absolute -top-4 -left-4 w-16 h-16 bg-teal-100 rounded-full -z-10"
-          >
-          </div>
+          <!-- Elemento decorativo reposicionado -->
+          <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-teal-50 rounded-full -z-10"></div>
         </div>
       </div>
 
@@ -31,54 +23,75 @@ import siteConfig from "../../data/site-config.json";
       <div class="space-y-8">
         <!-- Título da Seção -->
         <div class="space-y-4">
-          <h2 class="text-3xl font-['Poppins'] lg:text-4xl font-semibold text-slate-900">
+          <h2 class="text-3xl font-['Poppins'] lg:text-4xl font-semibold text-slate-900" data-aos="fade-left">
             Sobre mim
           </h2>
           <div class="w-12 h-1 bg-teal-600 rounded-full"></div>
         </div>
 
-        <!-- Biografia -->
+        <!-- Biografia com destaques estratégicos -->
         <div class="space-y-6 text-slate-600 leading-relaxed">
-          <p class="text-lg">
-            Olá! Sou <strong class="text-slate-900">{siteConfig.name}</strong>,
-            psicóloga formada pela Universidade Federal da Bahia (UFBA) em 2012 e 
-            com mais de 12 anos de experiência em atendimento psicológico clínico.
+          <p class="text-lg text-justify max-w-[65ch] mx-auto">
+            Olá! Sou <strong class="text-slate-900 font-semibold">{siteConfig.name}</strong>,
+            e estou disposta a te acolher de forma <span class="text-teal-700 font-medium">humanizada e gentil</span>. Mas antes deixa eu te mostrar com 
+            quem em breve você irá se encontrar e para isso resumo um pouco do caminho que percorri. Fiz 
+            psicologia pela Universidade Federal da Bahia (UFBA) com conclusão em 2012.2, tenho  
+            <span class="bg-teal-50 px-1 rounded font-medium text-slate-900">mais de 12 anos de experiência</span> 
+            em atendimento psicológico clínico, com todos os públicos, mesclando os 
+            atendimentos atualmente através de vários convênios de saúde e particular também, buscando ofertar 
+            aos clientes um trabalho personalizado, de qualidade e com ética baseado em métodos comprovados, 
+            sessões focadas em resultados, suporte emocional e flexibilidade de horários promovendo mais conforto 
+            ao cliente e opções de horário (de segunda a domingo) na realização dos serviços em duas modalidades 
+            possíveis (presencial e online). 
           </p>
 
-          <p class="text-lg">
-            Minha jornada na psicologia começou com o desejo genuíno de ajudar
-            pessoas a encontrarem seu equilíbrio emocional e bem-estar. Ofereço 
-            atendimento online permitindo flexibilidade e acessibilidade 
-            para quem busca apoio psicológico. Além disso trabalho com avaliação 
-            neuropsicológica, psicoterapia de casais e orientação de pais.
+          <p class="text-lg text-justify max-w-[65ch] mx-auto">Para tanto busquei me capacitar com planejamento e dedicação. Tenho 
+            <span class="text-slate-900 font-medium">especialização em Neuropsicologia</span>, 
+            <span class="text-slate-900 font-medium">especialização em Terapia cognitivo comportamental (TCC)</span> e 
+            MBA em Gestão de pessoas e duas excelentes formações em andamento: Orientação a pais onde me permite oferecer 
+            um trabalho mais integral e completo aos pais no atendimento ao menor e paralelo a esse trabalho também 
+            realizo atendimento infantil a fim de ajuda as crianças a lidar com dificuldades emocionais, comportamentais 
+            e sociais e auxiliar os pais a entenderem e responderem às necessidades dos filhos.
+          </p>
+
+          <p class="text-lg text-justify max-w-[65ch] mx-auto">
+            Seguindo os estudos no comportamento humano me realizo atualmente na Formação em Psicotrauma e assim oferto 
+            ao paciente maiores resultados no processo terapêutico. Identificando quais experiências foram traumáticas 
+            durante sua vida e como ressignifica-las, quais são os gatilhos atuais que desencadeiam o comportamento 
+            indesejado ou estado psicopatológico como depressão, ansiedade, compulsões, vícios, transtornos alimentares, 
+            procrastinação, autossabotagem, e ate dores físicas e tantas outras demandas, tanto em nível psicológico quanto 
+            somático. Sendo assim, propor estratégias de enfrentamento de acordo com as técnicas baseadas em evidencias cientificas 
+            e desenvolver abordagens terapêuticas eficazes para a recuperação. 
+            Minha jornada na psicologia começou com o desejo genuíno de ajudar pessoas a encontrarem seu equilíbrio emocional, 
+            bem-estar, autonomia e conexão com consigo mesmo. Conte comigo!
           </p>
         </div>
 
-        <!-- Formação Resumida -->
+        <!-- Formação Resumida com destaques -->
         <div class="space-y-6">
-          <h3 class="text-3xl font-['Poppins'] lg:text-4xl font-semibold text-slate-900">Formação</h3>
+          <h3 class="text-2xl font-['Poppins'] lg:text-3xl font-semibold text-slate-900">Formação</h3>
           <div class="w-12 h-1 bg-teal-600 rounded-full"></div>
 
           <div class="space-y-4">
             <!-- Especializações principais -->
-            <div class="bg-teal-50 p-6 rounded-xl">
-              <div class="grid gap-2">
+            <div class="bg-teal-50 p-6 rounded-xl" data-aos="fade-left">
+              <div class="grid gap-3">
                 <div class="flex items-start space-x-2">
                   <div class="w-1.5 h-1.5 bg-teal-700 rounded-full flex-shrink-0 mt-2"></div>
-                  <p class="text-slate-900">
+                  <p class="text-slate-900 font-medium">
                     Graduação em Psicologia - Universidade Federal da Bahia (UFBA)
                   </p>
                 </div>
                 <div class="flex items-start space-x-2">
                   <div class="w-1.5 h-1.5 bg-teal-700 rounded-full flex-shrink-0 mt-2"></div>
-                  <p class="text-slate-900">
+                  <p class="text-slate-900 font-medium">
                     Especialização em Neuropsicologia
                   </p>
                 </div>
                 <div class="flex items-start space-x-2">
                   <div class="w-1.5 h-1.5 bg-teal-700 rounded-full flex-shrink-0 mt-2"></div>
-                  <p class="text-slate-900">
-                    Especialização em Terapia Cognitivo-Comportamental(TCC)
+                  <p class="text-slate-900 font-medium">
+                    Especialização em Terapia Cognitivo-Comportamental (TCC)
                   </p>
                 </div>
                 <div class="flex items-start space-x-2">
@@ -96,4 +109,12 @@ import siteConfig from "../../data/site-config.json";
       </div>
     </div>
   </div>
+
+  <style>
+    /* Estilos para criar "pausas respiratórias" entre parágrafos */
+    .space-y-6 > p:not(:last-child) {
+      padding-bottom: 1.5rem;
+      border-bottom: 1px dashed #e2e8f0;
+    }
+  </style>
 </section>
