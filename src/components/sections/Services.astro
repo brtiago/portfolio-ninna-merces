@@ -21,7 +21,7 @@ const { terapias } = services;
     <!-- Título da Seção -->
     <div class="text-center mb-16">
       <h2
-        class="text-3xl font-['Poppins'] lg:text-4xl font-semibold text-slate-900 mb-4"
+        class="text-3xl font-['Poppins'] lg:text-4xl font-semibold text-slate-900 mb-4" data-aos="fade-up"
       >
         Meus Serviços
       </h2>
@@ -38,6 +38,7 @@ const { terapias } = services;
     <div class="grid md:grid-cols-2 gap-8">
 
       <!-- Orientação Vocacional -->
+      <div data-aos="fade-up" data-aos-delay="100">
       <CardServicos
         number={number}
         message={message}
@@ -52,8 +53,10 @@ const { terapias } = services;
         pagamentoPix={pagamentoPix}
         duracaoValor={terapias.orientacaoPais.duracaoValor}
       />
+      </div>
 
       <!-- Psicoterapia Infantil -->
+      <div data-aos="fade-up" data-aos-delay="200">
       <CardServicos
         number={number}
         message={message}
@@ -68,8 +71,10 @@ const { terapias } = services;
         pagamentoPix={pagamentoPix}
         duracaoValor={terapias.psicoterapiaInfantil.duracaoValor}
       />
+      </div>
 
       <!-- Psicoterapia de Individual -->
+      <div data-aos="fade-up" data-aos-delay="300">
       <CardServicos
         number={number}
         message={message}
@@ -84,8 +89,10 @@ const { terapias } = services;
         pagamentoPix={pagamentoPix}
         duracaoValor={terapias.psicoterapiaIndividual.duracaoValor}
       />
+      </div>
 
       <!-- Psicoterapia de Casal -->
+      <div data-aos="fade-up" data-aos-delay="400">
       <CardServicos
         number={number}
         message={message}
@@ -100,8 +107,10 @@ const { terapias } = services;
         pagamentoPix={pagamentoPix}
         duracaoValor={terapias.psicoterapiaCasal.duracaoValor}
       />
+      </div>
 
       <!-- Orientação a Pais -->
+      <div data-aos="fade-up" data-aos-delay="500">
       <CardServicos
         number={number}
         message={message}
@@ -116,8 +125,10 @@ const { terapias } = services;
         pagamentoPix={pagamentoPix}
         duracaoValor={terapias.orientacaoPais.duracaoValor}
       />
+      </div>
 
       <!-- Avaliação Neuropsicológica -->
+      <div data-aos="fade-up" data-aos-delay="600">
       <CardServicos
         number={number}
         message={message}
@@ -132,6 +143,7 @@ const { terapias } = services;
         pagamentoPix={pagamentoPix}
         duracaoValor={terapias.avaliacaoNeuropsicologica.campos_especiais.duracaoRecursosValor}
       />
+      </div>
 
     </div>
   </div>

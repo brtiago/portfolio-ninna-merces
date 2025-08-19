@@ -6,7 +6,7 @@ import siteConfig from "../../data/site-config.json";
   <div class="max-w-6xl mx-auto px-6">
     <div class="grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-start">
       <!-- Foto Secundária - Ajustada proporcionalmente -->
-      <div class="flex justify-center lg:justify-start lg:pt-4" data-aos="fade-right">
+      <div class="flex justify-center lg:justify-start lg:pt-4" data-aos="fade-right" data-aos-duration="600">
         <div class="relative w-full max-w-md">
           <img
             src={`/images/${siteConfig.images.image2}`}
@@ -24,14 +24,14 @@ import siteConfig from "../../data/site-config.json";
       <div class="space-y-8 overflow-hidden">
         <!-- Título da Seção -->
         <div class="space-y-4">
-          <h2 class="text-3xl font-['Poppins'] lg:text-4xl font-semibold text-slate-900" data-aos="fade-left">
+          <h2 class="text-3xl font-['Poppins'] lg:text-4xl font-semibold text-slate-900" data-aos="fade-up">
             Sobre mim
           </h2>
           <div class="w-12 h-1 bg-teal-600 rounded-full"></div>
         </div>
 
         <!-- Biografia com destaques estratégicos -->
-        <div class="space-y-6 text-slate-600 leading-relaxed">
+        <div class="space-y-6 text-slate-600 leading-relaxed" data-aos="fade-left" data-aos-delay="200">
           <p class="text-lg text-left md:text-justify max-w-[65ch] mx-auto">
             Olá! Sou <strong class="text-slate-900 font-semibold">{siteConfig.name}</strong>,
             e estou disposta a te acolher de forma <span class="text-teal-700 font-medium">humanizada e gentil</span>. Mas antes deixa eu te mostrar com 
@@ -70,7 +70,7 @@ import siteConfig from "../../data/site-config.json";
 
         <!-- Formação Resumida com destaques -->
         <div class="space-y-6">
-          <h3 class="text-2xl font-['Poppins'] lg:text-3xl font-semibold text-slate-900">Formação</h3>
+          <h3 class="text-2xl font-['Poppins'] lg:text-3xl font-semibold text-slate-900" data-aos="fade-up">Formação</h3>
           <div class="w-12 h-1 bg-teal-600 rounded-full"></div>
 
           <div class="space-y-4">
