@@ -5,8 +5,18 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
+    site: 'https://fazendopsi.com.br',
+    integrations: [
+        sitemap()
+    ],
     vite: {
+        build: {
+            cssCodeSplit: true,
+            minify: 'esbuild'
+        },
         plugins: [tailwindcss()],
     },
-    integrations: [sitemap()],
+    build: {
+        inlineStylesheets: 'auto'
+    }
 });
